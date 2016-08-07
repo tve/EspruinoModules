@@ -1,2 +1,3 @@
 # EspruinoModules
-JavaScript modules for Espruino
+Thorsten von Eicken's JavaScript modules for Espruino
+MIT License
