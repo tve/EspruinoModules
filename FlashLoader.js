@@ -2,6 +2,8 @@
  * FlashLoader.js - Load all code modules saved in flash using the FlashString module
  * Thorsten von Eicken 2016
  * MIT License
+ *
+ * Usage: require("FlashLoader")();
  */
 
 var FL = require("Flash");
@@ -12,7 +14,7 @@ var FN = FR.length / FS;  // number of flash pages
 var FO = 0x40200000;      // offset from flash address to its memory-mapped location
 
 // iterate through flash pages and load all modules
-module.exports = function(name) {
+module.exports = function() {
   for (var i=0; i<FN; i++) {
     var addr = FB+i*FS;
     //console.log("Checking", i, addr.toString(16));
